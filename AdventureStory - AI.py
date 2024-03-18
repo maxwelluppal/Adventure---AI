@@ -15,12 +15,20 @@ def forbidden_forest():
     print("You hear rustling in the bushes nearby.")
     print("What will you do?")
     print("1. Investigate the source of the rustling.")
-    print("2. Turn back and return to Hogwarts.")
-    choice = input("Enter your choice (1 or 2): ")
+    print("2. Continue deeper into the forest.")
+    print("3. Cast a protective charm and proceed cautiously.")
+    print("4. Retreat back to Hogwarts.")
+    choice = input("Enter your choice (1, 2, 3, or 4): ")
     if choice == "1":
         print("You discover a wounded unicorn, but before you can help, you are ambushed by a group of centaurs!")
         print("You narrowly escape, but you're injured.")
     elif choice == "2":
+        print("You venture deeper into the forest and encounter a colony of Acromantulas!")
+        print("You manage to flee, but it was a harrowing experience.")
+    elif choice == "3":
+        print("With your protective charm, you navigate through the forest safely, avoiding any danger.")
+        print("You emerge unscathed from the Forbidden Forest.")
+    elif choice == "4":
         print("You wisely decide to return to Hogwarts, avoiding potential danger in the forest.")
 
 def hogwarts_castle():
@@ -30,7 +38,9 @@ def hogwarts_castle():
     print("What will you do?")
     print("1. Ascend the staircase.")
     print("2. Explore a different part of the castle.")
-    choice = input("Enter your choice (1 or 2): ")
+    print("3. Use the Marauder's Map to find hidden passageways.")
+    print("4. Seek guidance from a portrait.")
+    choice = input("Enter your choice (1, 2, 3, or 4): ")
     if choice == "1":
         print("You climb the staircase and find yourself in the restricted section of the library.")
         print("You stumble upon a rare book of dark magic, but you're caught by Filch!")
@@ -38,10 +48,18 @@ def hogwarts_castle():
     elif choice == "2":
         print("You explore a different part of the castle and find a secret room filled with enchanted objects.")
         print("You spend hours discovering their mysteries before returning to your common room.")
+    elif choice == "3":
+        print("Using the Marauder's Map, you uncover a hidden passageway behind a tapestry.")
+        print("You navigate through it and find yourself in Hogsmeade!")
+        print("You enjoy a Butterbeer before sneaking back into Hogwarts.")
+    elif choice == "4":
+        print("You seek guidance from a portrait of a former headmaster.")
+        print("The portrait advises you to be cautious and avoid certain areas of the castle.")
+        print("You heed the advice and continue exploring more safely.")
 
 def main():
     intro()
-    choice = input("Enter your choice (1 or 2): ")
+    choice = input("Enter your choice (1, 2): ")
     if choice == "1":
         forbidden_forest()
     elif choice == "2":
