@@ -18,7 +18,8 @@ def forbidden_forest():
     print("2. Continue deeper into the forest.")
     print("3. Cast a protective charm and proceed cautiously.")
     print("4. Retreat back to Hogwarts.")
-    choice = input("Enter your choice (1, 2, 3, or 4): ")
+    print("5. Climb a tree to get a better view.")
+    choice = input("Enter your choice (1-5): ")
     if choice == "1":
         print("You discover a wounded unicorn, but before you can help, you are ambushed by a group of centaurs!")
         print("You narrowly escape, but you're injured.")
@@ -30,6 +31,10 @@ def forbidden_forest():
         print("You emerge unscathed from the Forbidden Forest.")
     elif choice == "4":
         print("You wisely decide to return to Hogwarts, avoiding potential danger in the forest.")
+    elif choice == "5":
+        print("You climb a tree and spot a glimmering object in the distance.")
+        print("Curious, you investigate and find a hidden treasure chest!")
+        print("Congratulations! You've found a valuable treasure!")
 
 def hogwarts_castle():
     print("You decide to explore the secret passages of Hogwarts castle.")
@@ -40,7 +45,8 @@ def hogwarts_castle():
     print("2. Explore a different part of the castle.")
     print("3. Use the Marauder's Map to find hidden passageways.")
     print("4. Seek guidance from a portrait.")
-    choice = input("Enter your choice (1, 2, 3, or 4): ")
+    print("5. Search for the Room of Requirement.")
+    choice = input("Enter your choice (1-5): ")
     if choice == "1":
         print("You climb the staircase and find yourself in the restricted section of the library.")
         print("You stumble upon a rare book of dark magic, but you're caught by Filch!")
@@ -56,6 +62,10 @@ def hogwarts_castle():
         print("You seek guidance from a portrait of a former headmaster.")
         print("The portrait advises you to be cautious and avoid certain areas of the castle.")
         print("You heed the advice and continue exploring more safely.")
+    elif choice == "5":
+        print("After much searching, you finally stumble upon the Room of Requirement.")
+        print("Inside, you find a trove of forgotten treasures, including a valuable magical artifact!")
+        print("Congratulations! You've discovered a priceless treasure!")
 
 def main():
     intro()
@@ -70,4 +80,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
