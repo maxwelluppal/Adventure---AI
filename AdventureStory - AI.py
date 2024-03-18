@@ -3,46 +3,53 @@
 # Program: Harry  Potter choose your own adventure game
 
 def intro():
-    print("Welcome to the Choose Your Own Adventure game!")
-    print("You find yourself standing at a crossroads. Which path will you choose?")
-    print("1. Take the path through the forest.")
-    print("2. Follow the path up the mountain.")
+    print("Welcome to the Harry Potter Choose Your Own Adventure game!")
+    print("You find yourself standing at a crossroads near Hogwarts School of Witchcraft and Wizardry.")
+    print("Which path will you choose?")
+    print("1. Enter the Forbidden Forest.")
+    print("2. Explore the secret passages of Hogwarts castle.")
 
-def forest_path():
-    print("You venture into the forest.")
-    print("You hear strange noises around you, but you push forward.")
-    print("Suddenly, you encounter a bear!")
+def forbidden_forest():
+    print("You venture into the Forbidden Forest.")
+    print("The trees loom ominously overhead as you tread carefully.")
+    print("You hear rustling in the bushes nearby.")
     print("What will you do?")
-    print("1. Try to scare the bear away.")
-    print("2. Slowly back away.")
+    print("1. Investigate the source of the rustling.")
+    print("2. Turn back and return to Hogwarts.")
     choice = input("Enter your choice (1 or 2): ")
     if choice == "1":
-        print("The bear seems unimpressed and charges at you. You have been mauled.")
+        print("You discover a wounded unicorn, but before you can help, you are ambushed by a group of centaurs!")
+        print("You narrowly escape, but you're injured.")
     elif choice == "2":
-        print("You slowly back away, and the bear loses interest. You survive!")
+        print("You wisely decide to return to Hogwarts, avoiding potential danger in the forest.")
 
-def mountain_path():
-    print("You start your ascent up the mountain.")
-    print("The path is steep, but the view is breathtaking.")
-    print("You reach a fork in the road.")
-    print("1. Take the narrow path to the left.")
-    print("2. Continue on the wider path to the right.")
+def hogwarts_castle():
+    print("You decide to explore the secret passages of Hogwarts castle.")
+    print("The castle is full of hidden nooks and crannies.")
+    print("You come across a staircase that seems to lead to a forbidden area.")
+    print("What will you do?")
+    print("1. Ascend the staircase.")
+    print("2. Explore a different part of the castle.")
     choice = input("Enter your choice (1 or 2): ")
     if choice == "1":
-        print("The narrow path leads to a dead end. You must backtrack.")
+        print("You climb the staircase and find yourself in the restricted section of the library.")
+        print("You stumble upon a rare book of dark magic, but you're caught by Filch!")
+        print("You receive a detention but manage to avoid more serious consequences.")
     elif choice == "2":
-        print("You continue on the wider path and reach the summit. You have a sense of accomplishment!")
+        print("You explore a different part of the castle and find a secret room filled with enchanted objects.")
+        print("You spend hours discovering their mysteries before returning to your common room.")
 
 def main():
     intro()
     choice = input("Enter your choice (1 or 2): ")
     if choice == "1":
-        forest_path()
+        forbidden_forest()
     elif choice == "2":
-        mountain_path()
+        hogwarts_castle()
     else:
         print("Invalid choice. Please enter 1 or 2.")
         main()
 
 if __name__ == "__main__":
     main()
+
