@@ -34,7 +34,7 @@ def forbidden_forest():
     elif choice == "5":
         print("You climb a tree and spot a glimmering object in the distance.")
         print("Curious, you investigate and find a hidden treasure chest!")
-        print("Congratulations! You've found a valuable treasure!")
+        print("Inside, you find a powerful Elder Wand, one of the Deathly Hallows! Congratulations!")
 
 def hogwarts_castle():
     print("You decide to explore the secret passages of Hogwarts castle.")
@@ -63,9 +63,8 @@ def hogwarts_castle():
         print("The portrait advises you to be cautious and avoid certain areas of the castle.")
         print("You heed the advice and continue exploring more safely.")
     elif choice == "5":
-        print("After much searching, you finally stumble upon the Room of Requirement.")
-        print("Inside, you find a trove of forgotten treasures, including a valuable magical artifact!")
-        print("Congratulations! You've discovered a priceless treasure!")
+        print("You search for the Room of Requirement, but despite your efforts, you can't find it.")
+        print("You decide to return to your common room, disappointed.")
 
 def main():
     intro()
@@ -80,5 +79,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
